@@ -1,0 +1,162 @@
+{
+  "$comment": "Example EmployeeUiTemplate — align formBinding with fe-sub-app-employee-directory v2-form-config.ts (employee-information). Storage key: (tenant_id, formKey).",
+  "templateId": "employee-information-default",
+  "moduleKey": "employee-management",
+  "formKey": "employee-information",
+  "name": "Employee information",
+  "version": 1,
+  "status": "ACTIVE",
+  "sourceSchemaVersion": "employee_schema_v2_4",
+  "updatedAt": "2026-03-22T12:00:00.000Z",
+  "layoutConstraints": { "maxFieldsPerRow": 2 },
+  "sections": [
+    {
+      "key": "identity",
+      "title": "Identity",
+      "rows": [
+        { "key": "row-name-single", "fields": ["sys_display_name"] },
+        { "key": "row-name-split", "fields": ["sys_first_name", "sys_last_name"] },
+        { "key": "row-id-dob", "fields": ["sys_employee_id", "sys_dob"] },
+        { "key": "row-gender", "fields": ["sys_gender"] },
+        { "key": "row-email", "fields": ["sys_work_email"] },
+        { "key": "row-phones", "fields": ["sys_work_number", "sys_uan"] },
+        { "key": "row-custom", "fields": ["cf_shirt_size"] }
+      ]
+    }
+  ],
+  "fields": {
+    "sys_display_name": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "fullName",
+      "canonicalPath": "personal_info.preferred_name",
+      "disabled": false,
+      "ui": {
+        "variant": "input",
+        "label": "Full Name",
+        "placeholder": "e.g. John Doe",
+        "required": true
+      }
+    },
+    "sys_first_name": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "firstName",
+      "canonicalPath": "personal_info.first_name",
+      "ui": {
+        "variant": "input",
+        "label": "First Name",
+        "placeholder": "e.g. John",
+        "required": true
+      }
+    },
+    "sys_last_name": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "lastName",
+      "canonicalPath": "personal_info.last_name",
+      "ui": {
+        "variant": "input",
+        "label": "Last Name",
+        "placeholder": "e.g. Doe",
+        "required": true
+      }
+    },
+    "sys_employee_id": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "employeeId",
+      "canonicalPath": "employee_id",
+      "disabled": true,
+      "ui": {
+        "variant": "input",
+        "label": "Employee ID",
+        "placeholder": "e.g. 123456",
+        "required": true
+      }
+    },
+    "sys_dob": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "DOB",
+      "canonicalPath": "personal_info.date_of_birth",
+      "ui": {
+        "variant": "date-picker",
+        "label": "Date of birth",
+        "placeholder": "Select date",
+        "dateFormat": "DMY"
+      }
+    },
+    "sys_gender": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "gender",
+      "canonicalPath": "personal_info.gender",
+      "ui": {
+        "variant": "radio-group",
+        "label": "Gender",
+        "orientation": "horizontal",
+        "required": true,
+        "options": [
+          { "id": "opt-m", "label": "Male", "value": "MALE" },
+          { "id": "opt-f", "label": "Female", "value": "FEMALE" },
+          { "id": "opt-o", "label": "Other", "value": "OTHER" }
+        ]
+      }
+    },
+    "sys_work_email": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "workEmail",
+      "canonicalPath": "personal_info.contact.work_email.address",
+      "disabled": true,
+      "ui": {
+        "variant": "input",
+        "type": "email",
+        "label": "Work Email",
+        "placeholder": "e.g. employee@company.com",
+        "required": true
+      }
+    },
+    "sys_work_number": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "workNumber",
+      "canonicalPath": "personal_info.contact.work_phone.full_number",
+      "ui": {
+        "variant": "phone",
+        "label": "Work Number",
+        "placeholder": "Enter work phone number"
+      }
+    },
+    "sys_uan": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "uanNumber",
+      "canonicalPath": "tax_info.india.uan",
+      "ui": {
+        "variant": "input",
+        "label": "UAN / National ID / SSN",
+        "placeholder": "UAN (India), National ID (VN), or SSN (USA)"
+      }
+    },
+    "cf_shirt_size": {
+      "kind": "custom",
+      "visible": true,
+      "fieldId": "cf_shirt_size",
+      "formBinding": "cf_shirt_size",
+      "valueType": "string",
+      "ui": {
+        "variant": "select",
+        "label": "T-shirt size",
+        "placeholder": "Select size",
+        "required": false,
+        "options": [
+          { "id": "s", "label": "S", "value": "S" },
+          { "id": "m", "label": "M", "value": "M" },
+          { "id": "l", "label": "L", "value": "L" }
+        ]
+      }
+    }
+  }
+}

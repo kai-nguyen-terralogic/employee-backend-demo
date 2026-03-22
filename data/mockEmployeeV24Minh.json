@@ -1,0 +1,353 @@
+{
+  "$comment": "Canonical employee JSON for employee-backend-demo → collection `employees`. Aligned with MOCK_EMPLOYEE_V24_MINH; seed sets record.tenant_id to SEED_TENANT_ID.",
+  "tenant_id": "507f1f77bcf86cd799439099",
+  "employee_id": "EMP-1042",
+  "status": "Active",
+  "customFields": {
+    "cf_shirt_size": "M"
+  },
+  "status_flags": { "is_on_notice_period": false, "is_pip_active": false },
+  "internal_employee": {
+    "is_internal": false,
+    "agent_type": null,
+    "agent_key": null,
+    "is_default": false,
+    "description": null
+  },
+  "employment_type": "Regular",
+  "employment_basis": "Full-time",
+  "hire_date": "2023-06-15",
+  "original_hire_date": "2023-06-15",
+  "is_comp_off_eligible": true,
+  "probation": {
+    "is_on_probation": false,
+    "start_date": "2023-06-15",
+    "duration_months": 2,
+    "end_date": "2023-08-15",
+    "notes": "Completed"
+  },
+  "contract_details": null,
+  "internship": null,
+  "labor_contract": {
+    "is_applicable": true,
+    "contract_term": "Indefinite",
+    "duration_months": null,
+    "start_date": "2023-06-15",
+    "end_date": null,
+    "notes": null
+  },
+  "employee_agreement": { "is_applicable": false, "start_date": null, "end_date": null, "notes": null },
+  "current_hiring_source": "LinkedIn",
+  "recruitment_links": {
+    "candidate_id": "cand-8821",
+    "hires": [
+      {
+        "source": "LinkedIn",
+        "hire_date": "2023-06-15",
+        "is_current": true,
+        "separation_date": null,
+        "separation_type": null
+      }
+    ]
+  },
+  "personal_info": {
+    "prefix": "Mr.",
+    "first_name": "Minh",
+    "middle_name": "Tuấn",
+    "last_name": "Phạm",
+    "suffix": null,
+    "preferred_name": "Minh",
+    "legal_full_name": null,
+    "date_of_birth": "1992-03-22",
+    "gender": "Male",
+    "marital_status": "Single",
+    "nationality": "VN",
+    "ethnicity": null,
+    "blood_type": null,
+    "medical_notes": null,
+    "photo_url": null,
+    "photo_updated_at": null,
+    "contact": {
+      "work_email": { "address": "minh.pham@company.com", "is_primary": true },
+      "personal_email": "minh.personal@email.com",
+      "work_phone": {
+        "country_code": "+84",
+        "number": "2812345678",
+        "full_number": "+842812345678",
+        "extension": null
+      },
+      "personal_phone": { "country_code": "+84", "number": "901234567", "full_number": "+84901234567" },
+      "preferred_contact_method": "Work Email"
+    },
+    "address": {
+      "is_same_as_permanent": false,
+      "current": {
+        "line1": "123 Lê Lợi",
+        "line2": "Apt 5B",
+        "city": "Ho Chi Minh City",
+        "state_province": null,
+        "postal_code": "700000",
+        "country": "VN",
+        "formatted_address": "123 Lê Lợi, Q1, HCMC",
+        "latitude": null,
+        "longitude": null,
+        "google_place_id": null
+      },
+      "permanent": {
+        "line1": "45 Nguyễn Huệ",
+        "line2": null,
+        "city": "Đà Nẵng",
+        "state_province": null,
+        "postal_code": "550000",
+        "country": "VN",
+        "formatted_address": null,
+        "latitude": null,
+        "longitude": null,
+        "google_place_id": null
+      }
+    },
+    "emergency_contacts": [
+      {
+        "name": "Phạm Thị Lan",
+        "relationship": "Spouse",
+        "country_code": "+84",
+        "phone": "909876543",
+        "full_number": "+84909876543",
+        "email": "lan@email.com",
+        "is_primary": true
+      }
+    ],
+    "dependents": [
+      {
+        "first_name": "Bảo",
+        "middle_name": null,
+        "last_name": "Phạm",
+        "relationship": "Child",
+        "date_of_birth": "2018-11-01",
+        "gender": "Male"
+      }
+    ]
+  },
+  "government_ids": [
+    {
+      "id_type": "CCCD",
+      "country_code": "VN",
+      "id_number_masked": "****9012",
+      "issue_country": "Vietnam",
+      "issue_date": "2021-01-10",
+      "expiry_date": "2036-01-10",
+      "verified": true,
+      "verified_by": "HR-001",
+      "verified_at": "2023-06-20",
+      "document_urls": [{ "label": "Front scan", "uploaded_at": "2023-06-20" }]
+    }
+  ],
+  "work_authorization": {
+    "is_authorized_to_work": true,
+    "authorization_type": "Citizen",
+    "visa_type": null,
+    "visa_number_masked": null,
+    "visa_expiry_date": null,
+    "work_permit_number_masked": null,
+    "work_permit_expiry": null,
+    "sponsor_company": null,
+    "alert_days_before_expiry": 60,
+    "documents": []
+  },
+  "visas": [
+    {
+      "country_code": "US",
+      "country_name": "United States",
+      "visa_type": "B1/B2",
+      "issue_date": "2024-01-01",
+      "expiry_date": "2034-01-01",
+      "is_active": true,
+      "entry_type": "Multiple Entry",
+      "notes": null
+    }
+  ],
+  "employment_details": {
+    "legal_entity": { "legal_entity_id": "507f1f77bcf86cd799439011", "name": "Company VN Co., Ltd" },
+    "division": { "division_id": "100000000000", "division_name": "Technology" },
+    "department": {
+      "department_id": "100100000000",
+      "department_code": "ENG",
+      "department_name": "Engineering",
+      "department_path": "Technology > Engineering",
+      "cost_center_code": "CC-ENG-01"
+    },
+    "job_title": { "job_title_id": "507f191e810c19729de860ea", "name": "Senior Software Engineer" },
+    "position_id": null,
+    "job_grade": "L5",
+    "reporting_manager": {
+      "employee_id": "507f1f77bcf86cd799439012",
+      "employee_name": "Nguyễn Văn Director",
+      "employee_email": "director@company.com",
+      "job_title": "Engineering Manager"
+    },
+    "organization_path": "Acme > Technology > Engineering",
+    "reporting_chain": [
+      {
+        "level": 1,
+        "employee_id": "507f1f77bcf86cd799439012",
+        "name": "Nguyễn Văn Director",
+        "job_title": "Engineering Manager"
+      }
+    ],
+    "chain_updated_at": "2025-03-10T08:00:00.000Z",
+    "approval_chain_id": null,
+    "work_location": {
+      "location_id": "507f1f77bcf86cd799439014",
+      "location_name": "HCMC HQ",
+      "building": { "building_id": "b1", "name": "Tower A" },
+      "floor": { "floor_id": "f12", "name": "12" },
+      "seat": { "seat_id": "s1205", "name": "12-05" }
+    },
+    "work_mode": "Hybrid",
+    "work_arrangement": {
+      "remote_days_per_week": 2,
+      "core_hours": { "window": "10:00 - 16:00", "timezone": "Asia/Ho_Chi_Minh" },
+      "flex_start_time": true,
+      "approved_by": "507f1f77bcf86cd799439012",
+      "approved_date": "2024-06-01",
+      "effective_date": "2024-06-01",
+      "review_date": "2025-06-01"
+    },
+    "cost_center": "CC-ENG-01"
+  },
+  "employment_history": [
+    {
+      "effective_date": "2023-06-15",
+      "event_type": "Hire",
+      "job_title": "Software Engineer",
+      "job_grade": "L4",
+      "department_id": "100100000000",
+      "department_name": "Engineering",
+      "reporting_manager_id": "507f1f77bcf86cd799439012",
+      "reporting_manager_name": "Nguyễn Văn Director",
+      "notes": "Initial hire",
+      "recorded_by": "HR-001"
+    },
+    {
+      "effective_date": "2024-01-10",
+      "event_type": "Promotion",
+      "job_title": "Senior Software Engineer",
+      "job_grade": "L5",
+      "department_id": "100100000000",
+      "department_name": "Engineering",
+      "reporting_manager_id": "507f1f77bcf86cd799439012",
+      "reporting_manager_name": "Nguyễn Văn Director",
+      "notes": "FY24 promotion",
+      "recorded_by": "HR-001"
+    }
+  ],
+  "work_schedule": {
+    "schedule_name": "Standard VN",
+    "schedule_type": "Fixed",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "working_hours_per_day": 8,
+    "working_hours_per_week": 40,
+    "shift_type": "Day",
+    "weekly_schedule": {
+      "monday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
+      "tuesday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
+      "wednesday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
+      "thursday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
+      "friday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
+      "saturday": { "is_working_day": false, "start_time": null, "end_time": null, "break_minutes": 0 },
+      "sunday": { "is_working_day": false, "start_time": null, "end_time": null, "break_minutes": 0 }
+    },
+    "timesheet_type": "Simple",
+    "requires_timesheet": false
+  },
+  "skills_and_qualifications": {
+    "skills": [
+      {
+        "skill_name": "TypeScript",
+        "proficiency": "Expert",
+        "years_of_experience": 6,
+        "is_primary": true,
+        "endorsed_by_count": 3,
+        "added_by": "Self"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "AWS Solutions Architect",
+        "issuing_body": "Amazon",
+        "expiry_date": "2025-05-01",
+        "verified": true,
+        "is_required_for_role": false
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor's",
+        "institution": "HCMUT",
+        "start_year": 2010,
+        "end_year": 2014,
+        "is_verified": true
+      }
+    ],
+    "work_experience": {
+      "prior_experience_years": 4,
+      "previous_employers": [
+        {
+          "company": "Previous Tech Ltd",
+          "title": "Software Engineer",
+          "start_date": "2019-01-01",
+          "end_date": "2023-05-30"
+        }
+      ]
+    },
+    "languages": [
+      { "language_code": "vi", "language_name": "Vietnamese", "proficiency": "Native" },
+      { "language_code": "en", "language_name": "English", "proficiency": "Professional" }
+    ],
+    "linkedin_url": "https://linkedin.com/in/example",
+    "bio": "Full-stack engineer focused on platform APIs."
+  },
+  "leave_policy": { "leave_policy_id": "507f1f77bcf86cd799439050" },
+  "tax_info": {
+    "tax_residence_country": "VN",
+    "vietnam": { "personal_tax_code": "***", "bhxh_number": "***" },
+    "india": null,
+    "us": null,
+    "middle_east": null
+  },
+  "separation": {
+    "is_separated": false,
+    "separation_type": null,
+    "separation_date": null,
+    "last_working_date": null,
+    "eligible_for_rehire": null,
+    "offboarding_ticket_id": null
+  },
+  "compliance": {
+    "data_retention_until": null,
+    "flags": []
+  },
+  "user_groups": [
+    { "group_id": "507f1f77bcf86cd799439040", "group_name": "Engineering" },
+    { "group_id": "507f1f77bcf86cd799439041", "group_name": "Directory Read" }
+  ],
+  "system": {
+    "created_at": "2023-06-15T10:00:00.000Z",
+    "updated_at": "2025-03-18T09:00:00.000Z",
+    "created_by": null,
+    "updated_by": null,
+    "is_active": true,
+    "is_deleted": false,
+    "profile_completion_percentage": 82,
+    "integrations": {
+      "payroll_exported": true,
+      "payroll_export_date": "2025-03-01",
+      "ats_sync_date": "2023-06-10",
+      "linked_systems": ["Workday", "ATS"]
+    }
+  },
+  "metadata": {
+    "employment_region": "Southeast Asia",
+    "data_classification": "Confidential"
+  }
+}

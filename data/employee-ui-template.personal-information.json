@@ -1,0 +1,150 @@
+{
+  "$comment": "Personal form aligned with fe-sub-app v2-form-config personalInformationDocument; formKey personal-information.",
+  "templateId": "personal-information-default",
+  "moduleKey": "employee-management",
+  "formKey": "personal-information",
+  "name": "Personal information",
+  "version": 1,
+  "status": "ACTIVE",
+  "sourceSchemaVersion": "employee_schema_v2_4",
+  "updatedAt": "2026-03-23T12:00:00.000Z",
+  "layoutConstraints": { "maxFieldsPerRow": 2 },
+  "sections": [
+    {
+      "key": "personal",
+      "title": "Personal information",
+      "rows": [
+        { "key": "row-phone-email", "fields": ["pers_personal_phone", "pers_personal_email"] },
+        { "key": "row-marital-nationality", "fields": ["pers_marital_status", "pers_nationality"] },
+        { "key": "row-id-dates", "fields": ["pers_national_id", "pers_ethnicity"] },
+        { "key": "row-dates", "fields": ["pers_issued_date", "pers_expiry_date"] },
+        { "key": "row-issue-social", "fields": ["pers_issue_by", "pers_social_insurance"] }
+      ]
+    }
+  ],
+  "fields": {
+    "pers_personal_phone": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "personalNumber",
+      "canonicalPath": "personal_info.contact.personal_phone.full_number",
+      "ui": {
+        "variant": "phone",
+        "label": "Personal Number",
+        "placeholder": "Enter personal phone number"
+      }
+    },
+    "pers_personal_email": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "personalEmail",
+      "canonicalPath": "personal_info.personal_email",
+      "ui": {
+        "variant": "input",
+        "type": "email",
+        "label": "Personal Email",
+        "placeholder": "e.g. personal@example.com"
+      }
+    },
+    "pers_marital_status": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "maritalStatus",
+      "canonicalPath": "personal_info.marital_status",
+      "ui": {
+        "variant": "select",
+        "label": "Marital Status",
+        "placeholder": "Select marital status",
+        "options": [
+          { "id": "opt-s", "label": "Single", "value": "Single" },
+          { "id": "opt-m", "label": "Married", "value": "Married" },
+          { "id": "opt-r", "label": "Rather not mention", "value": "Rather not mention" }
+        ]
+      }
+    },
+    "pers_nationality": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "nationality",
+      "canonicalPath": "personal_info.nationality",
+      "ui": {
+        "variant": "select",
+        "label": "Nationality",
+        "placeholder": "Select nationality",
+        "options": [
+          { "id": "vn", "label": "Vietnam (VN)", "value": "VN" },
+          { "id": "us", "label": "United States (US)", "value": "US" },
+          { "id": "sg", "label": "Singapore (SG)", "value": "SG" }
+        ]
+      }
+    },
+    "pers_national_id": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "nationalIdNumber",
+      "canonicalPath": "government_ids.0.id_number_masked",
+      "ui": {
+        "variant": "input",
+        "label": "National ID Number",
+        "placeholder": "National ID"
+      }
+    },
+    "pers_issued_date": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "issuedDate",
+      "canonicalPath": "government_ids.0.issue_date",
+      "ui": {
+        "variant": "date-picker",
+        "label": "Issue Date",
+        "placeholder": "Select issue date",
+        "dateFormat": "DMY"
+      }
+    },
+    "pers_expiry_date": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "expiryDate",
+      "canonicalPath": "government_ids.0.expiry_date",
+      "ui": {
+        "variant": "date-picker",
+        "label": "Expiry Date",
+        "placeholder": "Select expiry date",
+        "dateFormat": "DMY"
+      }
+    },
+    "pers_ethnicity": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "ethnicity",
+      "canonicalPath": "personal_info.ethnicity",
+      "ui": {
+        "variant": "input",
+        "label": "Ethnicity",
+        "placeholder": "Ethnicity"
+      }
+    },
+    "pers_issue_by": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "issueBy",
+      "canonicalPath": "government_ids.0.verified_by",
+      "ui": {
+        "variant": "input",
+        "label": "Issue By",
+        "placeholder": "Issued by"
+      }
+    },
+    "pers_social_insurance": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "socialInsurance",
+      "canonicalPath": "tax_info.vietnam.bhxh_number",
+      "ui": {
+        "variant": "input",
+        "label": "Social Insurance",
+        "placeholder": "Social insurance number"
+      }
+    }
+  }
+}
