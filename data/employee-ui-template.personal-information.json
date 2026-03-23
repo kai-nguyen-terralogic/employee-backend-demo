@@ -27,7 +27,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "personalNumber",
-      "canonicalPath": "personal_info.contact.personal_phone.full_number",
       "ui": {
         "variant": "phone",
         "label": "Personal Number",
@@ -38,7 +37,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "personalEmail",
-      "canonicalPath": "personal_info.personal_email",
       "ui": {
         "variant": "input",
         "type": "email",
@@ -50,7 +48,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "maritalStatus",
-      "canonicalPath": "personal_info.marital_status",
       "ui": {
         "variant": "select",
         "label": "Marital Status",
@@ -66,7 +63,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "nationality",
-      "canonicalPath": "personal_info.nationality",
       "ui": {
         "variant": "select",
         "label": "Nationality",
@@ -82,7 +78,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "nationalIdNumber",
-      "canonicalPath": "government_ids.0.id_number_masked",
       "ui": {
         "variant": "input",
         "label": "National ID Number",
@@ -93,7 +88,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "issuedDate",
-      "canonicalPath": "government_ids.0.issue_date",
       "ui": {
         "variant": "date-picker",
         "label": "Issue Date",
@@ -105,7 +99,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "expiryDate",
-      "canonicalPath": "government_ids.0.expiry_date",
       "ui": {
         "variant": "date-picker",
         "label": "Expiry Date",
@@ -117,7 +110,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "ethnicity",
-      "canonicalPath": "personal_info.ethnicity",
       "ui": {
         "variant": "input",
         "label": "Ethnicity",
@@ -128,7 +120,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "issueBy",
-      "canonicalPath": "government_ids.0.verified_by",
       "ui": {
         "variant": "input",
         "label": "Issue By",
@@ -139,7 +130,6 @@
       "kind": "system",
       "visible": true,
       "formBinding": "socialInsurance",
-      "canonicalPath": "tax_info.vietnam.bhxh_number",
       "ui": {
         "variant": "input",
         "label": "Social Insurance",

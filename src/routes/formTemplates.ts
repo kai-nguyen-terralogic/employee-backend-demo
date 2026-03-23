@@ -39,14 +39,13 @@ function buildTemplateResponse(doc: {
   definition: Record<string, unknown>;
   compiled?: unknown;
 }) {
-  const def = doc.definition;
   const updatedAt = doc.updatedAt.toISOString();
   return {
     version: doc.version,
     updatedAt,
     templateId: doc.templateId,
     template: {
-      ...def,
+      ...doc.definition,
       templateId: doc.templateId,
       formKey: doc.formKey,
       version: doc.version,

@@ -4,7 +4,7 @@ Demo API for **EmployeeUiTemplate** storage on MongoDB, aligned with [employee-t
 
 - **Stack:** Node.js 20+, Express, Mongoose, Zod, `X-Tenant-Id` header (ObjectId) instead of JWT.
 - **Collections:** `form_templates` (layout only; `compiled` is `null` in seed) and `employees` (canonical employee payload per `tenant_id` + `employee_id`).
-- **Separation:** Template config is tenant-wide; employee data is loaded separately (see `GET /api/employees/...`). The FE can merge field values using `template.fields[].canonicalPath` and the employee JSON.
+- **Separation:** Template config is tenant-wide; employee data is loaded separately (see `GET /api/employees/...`). Field-to-profile mapping is handled in the frontend, so backend templates/seed data do not include `canonicalPath`.
 
 ## Prerequisites
 
