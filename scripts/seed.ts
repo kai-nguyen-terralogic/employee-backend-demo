@@ -13,10 +13,11 @@ const MONGODB_URI = process.env.MONGODB_URI ?? "mongodb://localhost:27017/blazeu
 const SEED_TENANT_ID =
   process.env.SEED_TENANT_ID ?? "507f1f77bcf86cd799439011";
 
-/** Order matters: employee-information + personal-information (formKeys match FE). */
+/** Order matters: formKeys match FE navigation/rendering. */
 const TEMPLATE_FILES = [
   "employee-ui-template.example.json",
   "employee-ui-template.personal-information.json",
+  "employee-ui-template.address.json",
 ] as const;
 
 /** Log target without credentials so you can match Atlas vs local. */

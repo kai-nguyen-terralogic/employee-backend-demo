@@ -1,0 +1,45 @@
+{
+  "$comment": "Address form aligned with address-group schema from form builder preview; formKey address.",
+  "templateId": "address-default",
+  "moduleKey": "employee-management",
+  "formKey": "address",
+  "name": "Address",
+  "version": 1,
+  "status": "ACTIVE",
+  "sourceSchemaVersion": "employee_schema_v2_4",
+  "updatedAt": "2026-03-24T12:30:00.000Z",
+  "layoutConstraints": { "maxFieldsPerRow": 1 },
+  "sections": [
+    {
+      "key": "address_details",
+      "title": "Address Details",
+      "rows": [
+        { "key": "row-address-details", "fields": ["addr_employee_address"] }
+      ]
+    }
+  ],
+  "fields": {
+    "addr_employee_address": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "address",
+      "ui": {
+        "variant": "address-group",
+        "label": "Address Details",
+        "displayMode": "edit",
+        "sectionMode": "current-and-permanent",
+        "addressLabels": {
+          "currentAddress": "Current Address",
+          "permanentAddress": "Permanent Address",
+          "sameAsCurrentAddress": "Same as current address.",
+          "line1": "Address",
+          "line2": "Area/Locality",
+          "city": "City",
+          "stateProvince": "State",
+          "postalCode": "PIN Code",
+          "country": "Country"
+        }
+      }
+    }
+  }
+}
