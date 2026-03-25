@@ -82,15 +82,12 @@
       },
       "personalEmail": "minh.personal@email.com",
       "workPhone": {
-        "countryCode": "+84",
-        "number": "2812345678",
-        "fullNumber": "+842812345678",
-        "extension": null
+       "number": "+84903802222",
+        "countryCode": "VN"
       },
       "personalPhone": {
-        "countryCode": "+84",
-        "number": "901234567",
-        "fullNumber": "+84901234567"
+        "number": "+84903802222",
+        "countryCode": "VN"
       },
       "preferredContactMethod": "Work Email"
     },
@@ -125,9 +122,8 @@
       {
         "name": "Phạm Thị Lan",
         "relationship": "Spouse",
-        "countryCode": "+84",
-        "phone": "909876543",
-        "fullNumber": "+84909876543",
+        "countryCode": "VN",
+        "phone": "+84903802222",
         "email": "lan@email.com",
         "isPrimary": true
       }
