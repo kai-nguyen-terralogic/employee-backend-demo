@@ -14,16 +14,16 @@
       "key": "personal",
       "title": "Personal information",
       "rows": [
-        { "key": "row-phone-email", "fields": ["pers_personal_phone", "pers_personal_email"] },
-        { "key": "row-marital-nationality", "fields": ["pers_marital_status", "pers_nationality"] },
-        { "key": "row-id-dates", "fields": ["pers_national_id", "pers_ethnicity"] },
-        { "key": "row-dates", "fields": ["pers_issued_date", "pers_expiry_date"] },
-        { "key": "row-issue-social", "fields": ["pers_issue_by", "pers_social_insurance"] }
+        { "key": "rowPhoneEmail", "fields": ["persPersonalPhone", "persPersonalEmail"] },
+        { "key": "rowMaritalNationality", "fields": ["persMaritalStatus", "persNationality"] },
+        { "key": "rowIdDates", "fields": ["persNationalId", "persEthnicity"] },
+        { "key": "rowDates", "fields": ["persIssuedDate", "persExpiryDate"] },
+        { "key": "rowIssueSocial", "fields": ["persIssueBy", "persSocialInsurance"] }
       ]
     }
   ],
   "fields": {
-    "pers_personal_phone": {
+    "persPersonalPhone": {
       "kind": "system",
       "visible": true,
       "formBinding": "personalNumber",
@@ -33,7 +33,7 @@
         "placeholder": "Enter personal phone number"
       }
     },
-    "pers_personal_email": {
+    "persPersonalEmail": {
       "kind": "system",
       "visible": true,
       "formBinding": "personalEmail",
@@ -44,7 +44,7 @@
         "placeholder": "e.g. personal@example.com"
       }
     },
-    "pers_marital_status": {
+    "persMaritalStatus": {
       "kind": "system",
       "visible": true,
       "formBinding": "maritalStatus",
@@ -59,7 +59,7 @@
         ]
       }
     },
-    "pers_nationality": {
+    "persNationality": {
       "kind": "system",
       "visible": true,
       "formBinding": "nationality",
@@ -74,7 +74,7 @@
         ]
       }
     },
-    "pers_national_id": {
+    "persNationalId": {
       "kind": "system",
       "visible": true,
       "formBinding": "nationalIdNumber",
@@ -84,7 +84,7 @@
         "placeholder": "National ID"
       }
     },
-    "pers_issued_date": {
+    "persIssuedDate": {
       "kind": "system",
       "visible": true,
       "formBinding": "issuedDate",
@@ -95,7 +95,7 @@
         "dateFormat": "DMY"
       }
     },
-    "pers_expiry_date": {
+    "persExpiryDate": {
       "kind": "system",
       "visible": true,
       "formBinding": "expiryDate",
@@ -106,7 +106,7 @@
         "dateFormat": "DMY"
       }
     },
-    "pers_ethnicity": {
+    "persEthnicity": {
       "kind": "system",
       "visible": true,
       "formBinding": "ethnicity",
@@ -116,7 +116,7 @@
         "placeholder": "Ethnicity"
       }
     },
-    "pers_issue_by": {
+    "persIssueBy": {
       "kind": "system",
       "visible": true,
       "formBinding": "issueBy",
@@ -126,7 +126,7 @@
         "placeholder": "Issued by"
       }
     },
-    "pers_social_insurance": {
+    "persSocialInsurance": {
       "kind": "system",
       "visible": true,
       "formBinding": "socialInsurance",

@@ -39,7 +39,7 @@ Demo API for **EmployeeUiTemplate** storage on MongoDB, aligned with [employee-t
 
    Optional env:
 
-   - `SEED_TENANT_ID` — ObjectId hex (default `507f1f77bcf86cd799439011`). Stored on both collections; `record.tenant_id` inside the employee JSON is overwritten to this value for a single demo tenant.
+   - `SEED_TENANT_ID` — ObjectId hex (default `507f1f77bcf86cd799439011`). Stored on both collections; `record.tenantId` inside the employee JSON is overwritten to this value for a single demo tenant.
    - `SEED_EMPLOYEE_JSON` — optional path to a canonical employee JSON file (default: [data/mockEmployeeV24Minh.json](data/mockEmployeeV24Minh.json)).
 
 5. Run the server:
@@ -62,7 +62,7 @@ All form-template routes require header **`X-Tenant-Id`**: a valid MongoDB **Obj
 | POST | `/api/form-templates/employee-management/:templateId/publish` | Body `{ version }`; **DRAFT** → **ACTIVE**, other **ACTIVE** rows for same `(tenant_id, formKey)` → **ARCHIVED** |
 | GET | `/api/employees` | Demo: list `employee_id` values for the tenant |
 | GET | `/api/employees/:employeeId` | Demo: canonical employee body (e.g. `EMP-1042`) |
-| PUT | `/api/employees/:employeeId` | Demo: save full **`employee`** object from the client; body `{ "employee": { ... } }`. Server overwrites stored record and forces `employee_id` + `tenant_id` from URL / header |
+| PUT | `/api/employees/:employeeId` | Demo: save full **`employee`** object from the client; body `{ "employee": { ... } }`. Server overwrites stored record and forces `employeeId` + `tenantId` from URL / header |
 | POST | `/api/employees` | **501** stub (submit contract; not implemented) |
 
 ## Example curl

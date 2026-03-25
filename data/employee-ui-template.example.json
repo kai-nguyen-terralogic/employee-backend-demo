@@ -14,30 +14,18 @@
       "key": "identity",
       "title": "Identity",
       "rows": [
-        { "key": "row-name-single", "fields": ["sys_display_name"] },
-        { "key": "row-name-split", "fields": ["sys_first_name", "sys_last_name"] },
-        { "key": "row-id-dob", "fields": ["sys_employee_id", "sys_dob"] },
-        { "key": "row-gender", "fields": ["sys_gender"] },
-        { "key": "row-email", "fields": ["sys_work_email"] },
-        { "key": "row-phones", "fields": ["sys_work_number", "sys_uan"] },
-        { "key": "row-custom", "fields": ["cf_shirt_size"] }
+        { "key": "rowNameSingle", "fields": ["sysFirstName"] },
+        { "key": "rowNameSplit", "fields": ["sysMiddleName", "sysLastName"] },
+        { "key": "rowIdDob", "fields": ["sysEmployeeId", "sysDob"] },
+        { "key": "rowGender", "fields": ["sysGender"] },
+        { "key": "rowEmail", "fields": ["sysWorkEmail"] },
+        { "key": "rowPhones", "fields": ["sysWorkNumber", "sysUan"] },
+        { "key": "rowCustom", "fields": ["cfShirtSize"] }
       ]
     }
   ],
   "fields": {
-    "sys_display_name": {
-      "kind": "system",
-      "visible": true,
-      "formBinding": "fullName",
-      "disabled": false,
-      "ui": {
-        "variant": "input",
-        "label": "Full Name",
-        "placeholder": "e.g. John Doe",
-        "required": true
-      }
-    },
-    "sys_first_name": {
+    "sysFirstName": {
       "kind": "system",
       "visible": true,
       "formBinding": "firstName",
@@ -48,7 +36,17 @@
         "required": true
       }
     },
-    "sys_last_name": {
+    "sysMiddleName": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "middleName",
+      "ui": {
+        "variant": "input",
+        "label": "Middle Name",
+        "placeholder": "e.g. John"
+      }
+    },
+    "sysLastName": {
       "kind": "system",
       "visible": true,
       "formBinding": "lastName",
@@ -59,7 +57,7 @@
         "required": true
       }
     },
-    "sys_employee_id": {
+    "sysEmployeeId": {
       "kind": "system",
       "visible": true,
       "formBinding": "employeeId",
@@ -71,10 +69,10 @@
         "required": true
       }
     },
-    "sys_dob": {
+    "sysDob": {
       "kind": "system",
       "visible": true,
-      "formBinding": "DOB",
+      "formBinding": "dob",
       "ui": {
         "variant": "date-picker",
         "label": "Date of birth",
@@ -82,7 +80,7 @@
         "dateFormat": "DMY"
       }
     },
-    "sys_gender": {
+    "sysGender": {
       "kind": "system",
       "visible": true,
       "formBinding": "gender",
@@ -98,7 +96,7 @@
         ]
       }
     },
-    "sys_work_email": {
+    "sysWorkEmail": {
       "kind": "system",
       "visible": true,
       "formBinding": "workEmail",
@@ -111,7 +109,7 @@
         "required": true
       }
     },
-    "sys_work_number": {
+    "sysWorkNumber": {
       "kind": "system",
       "visible": true,
       "formBinding": "workNumber",
@@ -121,7 +119,7 @@
         "placeholder": "Enter work phone number"
       }
     },
-    "sys_uan": {
+    "sysUan": {
       "kind": "system",
       "visible": true,
       "formBinding": "uanNumber",
@@ -131,11 +129,11 @@
         "placeholder": "UAN (India), National ID (VN), or SSN (USA)"
       }
     },
-    "cf_shirt_size": {
+    "cfShirtSize": {
       "kind": "custom",
       "visible": true,
-      "fieldId": "cf_shirt_size",
-      "formBinding": "cf_shirt_size",
+      "fieldId": "cfShirtSize",
+      "formBinding": "cfShirtSize",
       "valueType": "string",
       "ui": {
         "variant": "select",

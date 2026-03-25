@@ -11,15 +11,15 @@
   "layoutConstraints": { "maxFieldsPerRow": 1 },
   "sections": [
     {
-      "key": "address_details",
+      "key": "addressDetails",
       "title": "Address Details",
       "rows": [
-        { "key": "row-address-details", "fields": ["addr_employee_address"] }
+        { "key": "rowAddressDetails", "fields": ["sysEmployeeAddress"] }
       ]
     }
   ],
   "fields": {
-    "addr_employee_address": {
+    "sysEmployeeAddress": {
       "kind": "system",
       "visible": true,
       "formBinding": "address",

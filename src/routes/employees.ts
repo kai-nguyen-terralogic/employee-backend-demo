@@ -54,7 +54,7 @@ router.get("/:employeeId", async (req: TenantRequest, res: Response) => {
 
 /**
  * Replace stored employee payload with the object from the client (e.g. full form state).
- * `employee_id` and `tenant_id` are forced from the URL / header so the client cannot repoint the row.
+ * `employeeId` and `tenantId` are forced from the URL / header so the client cannot repoint the row.
  */
 router.put("/:employeeId", async (req: TenantRequest, res: Response) => {
   const tenant_id = req.tenantId!;
@@ -78,9 +78,11 @@ router.put("/:employeeId", async (req: TenantRequest, res: Response) => {
 
   const record: Record<string, unknown> = {
     ...parsed.data.employee,
-    employee_id,
-    tenant_id: tenant_id.toString(),
+    employeeId: employee_id,
+    tenantId: tenant_id.toString(),
   };
+  delete record.employee_id;
+  delete record.tenant_id;
 
   doc.record = record;
   doc.markModified("record");

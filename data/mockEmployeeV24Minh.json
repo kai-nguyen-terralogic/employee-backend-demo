@@ -1,353 +1,451 @@
 {
-  "$comment": "Canonical employee JSON for employee-backend-demo → collection `employees`. Aligned with MOCK_EMPLOYEE_V24_MINH; seed sets record.tenant_id to SEED_TENANT_ID.",
-  "tenant_id": "507f1f77bcf86cd799439099",
-  "employee_id": "EMP-1042",
+  "$comment": "Canonical employee JSON for employee-backend-demo -> collection `employees`. Aligned with MOCK_EMPLOYEE_V24_MINH; seed sets record.tenantId to SEED_TENANT_ID.",
+  "tenantId": "507f1f77bcf86cd799439099",
+  "employeeId": "EMP-1042",
   "status": "Active",
   "customFields": {
-    "cf_shirt_size": "M"
+    "cfShirtSize": "M"
   },
-  "status_flags": { "is_on_notice_period": false, "is_pip_active": false },
-  "internal_employee": {
-    "is_internal": false,
-    "agent_type": null,
-    "agent_key": null,
-    "is_default": false,
+  "statusFlags": {
+    "isOnNoticePeriod": false,
+    "isPipActive": false
+  },
+  "internalEmployee": {
+    "isInternal": false,
+    "agentType": null,
+    "agentKey": null,
+    "isDefault": false,
     "description": null
   },
-  "employment_type": "Regular",
-  "employment_basis": "Full-time",
-  "hire_date": "2023-06-15",
-  "original_hire_date": "2023-06-15",
-  "is_comp_off_eligible": true,
+  "employmentType": "Regular",
+  "employmentBasis": "Full-time",
+  "hireDate": "2023-06-15",
+  "originalHireDate": "2023-06-15",
+  "isCompOffEligible": true,
   "probation": {
-    "is_on_probation": false,
-    "start_date": "2023-06-15",
-    "duration_months": 2,
-    "end_date": "2023-08-15",
+    "isOnProbation": false,
+    "startDate": "2023-06-15",
+    "durationMonths": 2,
+    "endDate": "2023-08-15",
     "notes": "Completed"
   },
-  "contract_details": null,
+  "contractDetails": null,
   "internship": null,
-  "labor_contract": {
-    "is_applicable": true,
-    "contract_term": "Indefinite",
-    "duration_months": null,
-    "start_date": "2023-06-15",
-    "end_date": null,
+  "laborContract": {
+    "isApplicable": true,
+    "contractTerm": "Indefinite",
+    "durationMonths": null,
+    "startDate": "2023-06-15",
+    "endDate": null,
     "notes": null
   },
-  "employee_agreement": { "is_applicable": false, "start_date": null, "end_date": null, "notes": null },
-  "current_hiring_source": "LinkedIn",
-  "recruitment_links": {
-    "candidate_id": "cand-8821",
+  "employeeAgreement": {
+    "isApplicable": false,
+    "startDate": null,
+    "endDate": null,
+    "notes": null
+  },
+  "currentHiringSource": "LinkedIn",
+  "recruitmentLinks": {
+    "candidateId": "cand-8821",
     "hires": [
       {
         "source": "LinkedIn",
-        "hire_date": "2023-06-15",
-        "is_current": true,
-        "separation_date": null,
-        "separation_type": null
+        "hireDate": "2023-06-15",
+        "isCurrent": true,
+        "separationDate": null,
+        "separationType": null
       }
     ]
   },
-  "personal_info": {
+  "personalInfo": {
     "prefix": "Mr.",
-    "first_name": "Minh",
-    "middle_name": "Tuấn",
-    "last_name": "Phạm",
+    "firstName": "Minh",
+    "middleName": "Tuấn",
+    "lastName": "Phạm",
     "suffix": null,
-    "preferred_name": "Minh",
-    "legal_full_name": null,
-    "date_of_birth": "1992-03-22",
+    "preferredName": "Minh",
+    "legalFullName": null,
+    "dateOfBirth": "1992-03-22",
     "gender": "Male",
-    "marital_status": "Single",
+    "maritalStatus": "Single",
     "nationality": "VN",
     "ethnicity": null,
-    "blood_type": null,
-    "medical_notes": null,
-    "photo_url": null,
-    "photo_updated_at": null,
+    "bloodType": null,
+    "medicalNotes": null,
+    "photoUrl": null,
+    "photoUpdatedAt": null,
     "contact": {
-      "work_email": { "address": "minh.pham@company.com", "is_primary": true },
-      "personal_email": "minh.personal@email.com",
-      "work_phone": {
-        "country_code": "+84",
+      "workEmail": {
+        "address": "minh.pham@company.com",
+        "isPrimary": true
+      },
+      "personalEmail": "minh.personal@email.com",
+      "workPhone": {
+        "countryCode": "+84",
         "number": "2812345678",
-        "full_number": "+842812345678",
+        "fullNumber": "+842812345678",
         "extension": null
       },
-      "personal_phone": { "country_code": "+84", "number": "901234567", "full_number": "+84901234567" },
-      "preferred_contact_method": "Work Email"
+      "personalPhone": {
+        "countryCode": "+84",
+        "number": "901234567",
+        "fullNumber": "+84901234567"
+      },
+      "preferredContactMethod": "Work Email"
     },
     "address": {
-      "is_same_as_permanent": false,
+      "isSameAsPermanent": false,
       "current": {
         "line1": "123 Lê Lợi",
         "line2": "Apt 5B",
         "city": "Ho Chi Minh City",
-        "state_province": null,
-        "postal_code": "700000",
+        "stateProvince": null,
+        "postalCode": "700000",
         "country": "VN",
-        "formatted_address": "123 Lê Lợi, Q1, HCMC",
+        "formattedAddress": "123 Lê Lợi, Q1, HCMC",
         "latitude": null,
         "longitude": null,
-        "google_place_id": null
+        "googlePlaceId": null
       },
       "permanent": {
         "line1": "45 Nguyễn Huệ",
         "line2": null,
         "city": "Đà Nẵng",
-        "state_province": null,
-        "postal_code": "550000",
+        "stateProvince": null,
+        "postalCode": "550000",
         "country": "VN",
-        "formatted_address": null,
+        "formattedAddress": null,
         "latitude": null,
         "longitude": null,
-        "google_place_id": null
+        "googlePlaceId": null
       }
     },
-    "emergency_contacts": [
+    "emergencyContacts": [
       {
         "name": "Phạm Thị Lan",
         "relationship": "Spouse",
-        "country_code": "+84",
+        "countryCode": "+84",
         "phone": "909876543",
-        "full_number": "+84909876543",
+        "fullNumber": "+84909876543",
         "email": "lan@email.com",
-        "is_primary": true
+        "isPrimary": true
       }
     ],
     "dependents": [
       {
-        "first_name": "Bảo",
-        "middle_name": null,
-        "last_name": "Phạm",
+        "firstName": "Bảo",
+        "middleName": null,
+        "lastName": "Phạm",
         "relationship": "Child",
-        "date_of_birth": "2018-11-01",
+        "dateOfBirth": "2018-11-01",
         "gender": "Male"
       }
     ]
   },
-  "government_ids": [
+  "governmentIds": [
     {
-      "id_type": "CCCD",
-      "country_code": "VN",
-      "id_number_masked": "****9012",
-      "issue_country": "Vietnam",
-      "issue_date": "2021-01-10",
-      "expiry_date": "2036-01-10",
+      "idType": "CCCD",
+      "countryCode": "VN",
+      "idNumberMasked": "****9012",
+      "issueCountry": "Vietnam",
+      "issueDate": "2021-01-10",
+      "expiryDate": "2036-01-10",
       "verified": true,
-      "verified_by": "HR-001",
-      "verified_at": "2023-06-20",
-      "document_urls": [{ "label": "Front scan", "uploaded_at": "2023-06-20" }]
+      "verifiedBy": "HR-001",
+      "verifiedAt": "2023-06-20",
+      "documentUrls": [
+        {
+          "label": "Front scan",
+          "uploadedAt": "2023-06-20"
+        }
+      ]
     }
   ],
-  "work_authorization": {
-    "is_authorized_to_work": true,
-    "authorization_type": "Citizen",
-    "visa_type": null,
-    "visa_number_masked": null,
-    "visa_expiry_date": null,
-    "work_permit_number_masked": null,
-    "work_permit_expiry": null,
-    "sponsor_company": null,
-    "alert_days_before_expiry": 60,
+  "workAuthorization": {
+    "isAuthorizedToWork": true,
+    "authorizationType": "Citizen",
+    "visaType": null,
+    "visaNumberMasked": null,
+    "visaExpiryDate": null,
+    "workPermitNumberMasked": null,
+    "workPermitExpiry": null,
+    "sponsorCompany": null,
+    "alertDaysBeforeExpiry": 60,
     "documents": []
   },
   "visas": [
     {
-      "country_code": "US",
-      "country_name": "United States",
-      "visa_type": "B1/B2",
-      "issue_date": "2024-01-01",
-      "expiry_date": "2034-01-01",
-      "is_active": true,
-      "entry_type": "Multiple Entry",
+      "countryCode": "US",
+      "countryName": "United States",
+      "visaType": "B1/B2",
+      "issueDate": "2024-01-01",
+      "expiryDate": "2034-01-01",
+      "isActive": true,
+      "entryType": "Multiple Entry",
       "notes": null
     }
   ],
-  "employment_details": {
-    "legal_entity": { "legal_entity_id": "507f1f77bcf86cd799439011", "name": "Company VN Co., Ltd" },
-    "division": { "division_id": "100000000000", "division_name": "Technology" },
+  "employmentDetails": {
+    "legalEntity": {
+      "legalEntityId": "507f1f77bcf86cd799439011",
+      "name": "Company VN Co., Ltd"
+    },
+    "division": {
+      "divisionId": "100000000000",
+      "divisionName": "Technology"
+    },
     "department": {
-      "department_id": "100100000000",
-      "department_code": "ENG",
-      "department_name": "Engineering",
-      "department_path": "Technology > Engineering",
-      "cost_center_code": "CC-ENG-01"
+      "departmentId": "100100000000",
+      "departmentCode": "ENG",
+      "departmentName": "Engineering",
+      "departmentPath": "Technology > Engineering",
+      "costCenterCode": "CC-ENG-01"
     },
-    "job_title": { "job_title_id": "507f191e810c19729de860ea", "name": "Senior Software Engineer" },
-    "position_id": null,
-    "job_grade": "L5",
-    "reporting_manager": {
-      "employee_id": "507f1f77bcf86cd799439012",
-      "employee_name": "Nguyễn Văn Director",
-      "employee_email": "director@company.com",
-      "job_title": "Engineering Manager"
+    "jobTitle": {
+      "jobTitleId": "507f191e810c19729de860ea",
+      "name": "Senior Software Engineer"
     },
-    "organization_path": "Acme > Technology > Engineering",
-    "reporting_chain": [
+    "positionId": null,
+    "jobGrade": "L5",
+    "reportingManager": {
+      "employeeId": "507f1f77bcf86cd799439012",
+      "employeeName": "Nguyễn Văn Director",
+      "employeeEmail": "director@company.com",
+      "jobTitle": "Engineering Manager"
+    },
+    "organizationPath": "Acme > Technology > Engineering",
+    "reportingChain": [
       {
         "level": 1,
-        "employee_id": "507f1f77bcf86cd799439012",
+        "employeeId": "507f1f77bcf86cd799439012",
         "name": "Nguyễn Văn Director",
-        "job_title": "Engineering Manager"
+        "jobTitle": "Engineering Manager"
       }
     ],
-    "chain_updated_at": "2025-03-10T08:00:00.000Z",
-    "approval_chain_id": null,
-    "work_location": {
-      "location_id": "507f1f77bcf86cd799439014",
-      "location_name": "HCMC HQ",
-      "building": { "building_id": "b1", "name": "Tower A" },
-      "floor": { "floor_id": "f12", "name": "12" },
-      "seat": { "seat_id": "s1205", "name": "12-05" }
+    "chainUpdatedAt": "2025-03-10T08:00:00.000Z",
+    "approvalChainId": null,
+    "workLocation": {
+      "locationId": "507f1f77bcf86cd799439014",
+      "locationName": "HCMC HQ",
+      "building": {
+        "buildingId": "b1",
+        "name": "Tower A"
+      },
+      "floor": {
+        "floorId": "f12",
+        "name": "12"
+      },
+      "seat": {
+        "seatId": "s1205",
+        "name": "12-05"
+      }
     },
-    "work_mode": "Hybrid",
-    "work_arrangement": {
-      "remote_days_per_week": 2,
-      "core_hours": { "window": "10:00 - 16:00", "timezone": "Asia/Ho_Chi_Minh" },
-      "flex_start_time": true,
-      "approved_by": "507f1f77bcf86cd799439012",
-      "approved_date": "2024-06-01",
-      "effective_date": "2024-06-01",
-      "review_date": "2025-06-01"
+    "workMode": "Hybrid",
+    "workArrangement": {
+      "remoteDaysPerWeek": 2,
+      "coreHours": {
+        "window": "10:00 - 16:00",
+        "timezone": "Asia/Ho_Chi_Minh"
+      },
+      "flexStartTime": true,
+      "approvedBy": "507f1f77bcf86cd799439012",
+      "approvedDate": "2024-06-01",
+      "effectiveDate": "2024-06-01",
+      "reviewDate": "2025-06-01"
     },
-    "cost_center": "CC-ENG-01"
+    "costCenter": "CC-ENG-01"
   },
-  "employment_history": [
+  "employmentHistory": [
     {
-      "effective_date": "2023-06-15",
-      "event_type": "Hire",
-      "job_title": "Software Engineer",
-      "job_grade": "L4",
-      "department_id": "100100000000",
-      "department_name": "Engineering",
-      "reporting_manager_id": "507f1f77bcf86cd799439012",
-      "reporting_manager_name": "Nguyễn Văn Director",
+      "effectiveDate": "2023-06-15",
+      "eventType": "Hire",
+      "jobTitle": "Software Engineer",
+      "jobGrade": "L4",
+      "departmentId": "100100000000",
+      "departmentName": "Engineering",
+      "reportingManagerId": "507f1f77bcf86cd799439012",
+      "reportingManagerName": "Nguyễn Văn Director",
       "notes": "Initial hire",
-      "recorded_by": "HR-001"
+      "recordedBy": "HR-001"
     },
     {
-      "effective_date": "2024-01-10",
-      "event_type": "Promotion",
-      "job_title": "Senior Software Engineer",
-      "job_grade": "L5",
-      "department_id": "100100000000",
-      "department_name": "Engineering",
-      "reporting_manager_id": "507f1f77bcf86cd799439012",
-      "reporting_manager_name": "Nguyễn Văn Director",
+      "effectiveDate": "2024-01-10",
+      "eventType": "Promotion",
+      "jobTitle": "Senior Software Engineer",
+      "jobGrade": "L5",
+      "departmentId": "100100000000",
+      "departmentName": "Engineering",
+      "reportingManagerId": "507f1f77bcf86cd799439012",
+      "reportingManagerName": "Nguyễn Văn Director",
       "notes": "FY24 promotion",
-      "recorded_by": "HR-001"
+      "recordedBy": "HR-001"
     }
   ],
-  "work_schedule": {
-    "schedule_name": "Standard VN",
-    "schedule_type": "Fixed",
+  "workSchedule": {
+    "scheduleName": "Standard VN",
+    "scheduleType": "Fixed",
     "timezone": "Asia/Ho_Chi_Minh",
-    "working_hours_per_day": 8,
-    "working_hours_per_week": 40,
-    "shift_type": "Day",
-    "weekly_schedule": {
-      "monday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
-      "tuesday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
-      "wednesday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
-      "thursday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
-      "friday": { "is_working_day": true, "start_time": "09:00", "end_time": "18:00", "break_minutes": 60 },
-      "saturday": { "is_working_day": false, "start_time": null, "end_time": null, "break_minutes": 0 },
-      "sunday": { "is_working_day": false, "start_time": null, "end_time": null, "break_minutes": 0 }
+    "workingHoursPerDay": 8,
+    "workingHoursPerWeek": 40,
+    "shiftType": "Day",
+    "weeklySchedule": {
+      "monday": {
+        "isWorkingDay": true,
+        "startTime": "09:00",
+        "endTime": "18:00",
+        "breakMinutes": 60
+      },
+      "tuesday": {
+        "isWorkingDay": true,
+        "startTime": "09:00",
+        "endTime": "18:00",
+        "breakMinutes": 60
+      },
+      "wednesday": {
+        "isWorkingDay": true,
+        "startTime": "09:00",
+        "endTime": "18:00",
+        "breakMinutes": 60
+      },
+      "thursday": {
+        "isWorkingDay": true,
+        "startTime": "09:00",
+        "endTime": "18:00",
+        "breakMinutes": 60
+      },
+      "friday": {
+        "isWorkingDay": true,
+        "startTime": "09:00",
+        "endTime": "18:00",
+        "breakMinutes": 60
+      },
+      "saturday": {
+        "isWorkingDay": false,
+        "startTime": null,
+        "endTime": null,
+        "breakMinutes": 0
+      },
+      "sunday": {
+        "isWorkingDay": false,
+        "startTime": null,
+        "endTime": null,
+        "breakMinutes": 0
+      }
     },
-    "timesheet_type": "Simple",
-    "requires_timesheet": false
+    "timesheetType": "Simple",
+    "requiresTimesheet": false
   },
-  "skills_and_qualifications": {
+  "skillsAndQualifications": {
     "skills": [
       {
-        "skill_name": "TypeScript",
+        "skillName": "TypeScript",
         "proficiency": "Expert",
-        "years_of_experience": 6,
-        "is_primary": true,
-        "endorsed_by_count": 3,
-        "added_by": "Self"
+        "yearsOfExperience": 6,
+        "isPrimary": true,
+        "endorsedByCount": 3,
+        "addedBy": "Self"
       }
     ],
     "certifications": [
       {
         "name": "AWS Solutions Architect",
-        "issuing_body": "Amazon",
-        "expiry_date": "2025-05-01",
+        "issuingBody": "Amazon",
+        "expiryDate": "2025-05-01",
         "verified": true,
-        "is_required_for_role": false
+        "isRequiredForRole": false
       }
     ],
     "education": [
       {
         "degree": "Bachelor's",
         "institution": "HCMUT",
-        "start_year": 2010,
-        "end_year": 2014,
-        "is_verified": true
+        "startYear": 2010,
+        "endYear": 2014,
+        "isVerified": true
       }
     ],
-    "work_experience": {
-      "prior_experience_years": 4,
-      "previous_employers": [
+    "workExperience": {
+      "priorExperienceYears": 4,
+      "previousEmployers": [
         {
           "company": "Previous Tech Ltd",
           "title": "Software Engineer",
-          "start_date": "2019-01-01",
-          "end_date": "2023-05-30"
+          "startDate": "2019-01-01",
+          "endDate": "2023-05-30"
         }
       ]
     },
     "languages": [
-      { "language_code": "vi", "language_name": "Vietnamese", "proficiency": "Native" },
-      { "language_code": "en", "language_name": "English", "proficiency": "Professional" }
+      {
+        "languageCode": "vi",
+        "languageName": "Vietnamese",
+        "proficiency": "Native"
+      },
+      {
+        "languageCode": "en",
+        "languageName": "English",
+        "proficiency": "Professional"
+      }
     ],
-    "linkedin_url": "https://linkedin.com/in/example",
+    "linkedinUrl": "https://linkedin.com/in/example",
     "bio": "Full-stack engineer focused on platform APIs."
   },
-  "leave_policy": { "leave_policy_id": "507f1f77bcf86cd799439050" },
-  "tax_info": {
-    "tax_residence_country": "VN",
-    "vietnam": { "personal_tax_code": "***", "bhxh_number": "***" },
+  "leavePolicy": {
+    "leavePolicyId": "507f1f77bcf86cd799439050"
+  },
+  "taxInfo": {
+    "taxResidenceCountry": "VN",
+    "vietnam": {
+      "personalTaxCode": "***",
+      "bhxhNumber": "***"
+    },
     "india": null,
     "us": null,
-    "middle_east": null
+    "middleEast": null
   },
   "separation": {
-    "is_separated": false,
-    "separation_type": null,
-    "separation_date": null,
-    "last_working_date": null,
-    "eligible_for_rehire": null,
-    "offboarding_ticket_id": null
+    "isSeparated": false,
+    "separationType": null,
+    "separationDate": null,
+    "lastWorkingDate": null,
+    "eligibleForRehire": null,
+    "offboardingTicketId": null
   },
   "compliance": {
-    "data_retention_until": null,
+    "dataRetentionUntil": null,
     "flags": []
   },
-  "user_groups": [
-    { "group_id": "507f1f77bcf86cd799439040", "group_name": "Engineering" },
-    { "group_id": "507f1f77bcf86cd799439041", "group_name": "Directory Read" }
+  "userGroups": [
+    {
+      "groupId": "507f1f77bcf86cd799439040",
+      "groupName": "Engineering"
+    },
+    {
+      "groupId": "507f1f77bcf86cd799439041",
+      "groupName": "Directory Read"
+    }
   ],
   "system": {
-    "created_at": "2023-06-15T10:00:00.000Z",
-    "updated_at": "2025-03-18T09:00:00.000Z",
-    "created_by": null,
-    "updated_by": null,
-    "is_active": true,
-    "is_deleted": false,
-    "profile_completion_percentage": 82,
+    "createdAt": "2023-06-15T10:00:00.000Z",
+    "updatedAt": "2025-03-18T09:00:00.000Z",
+    "createdBy": null,
+    "updatedBy": null,
+    "isActive": true,
+    "isDeleted": false,
+    "profileCompletionPercentage": 82,
     "integrations": {
-      "payroll_exported": true,
-      "payroll_export_date": "2025-03-01",
-      "ats_sync_date": "2023-06-10",
-      "linked_systems": ["Workday", "ATS"]
+      "payrollExported": true,
+      "payrollExportDate": "2025-03-01",
+      "atsSyncDate": "2023-06-10",
+      "linkedSystems": [
+        "Workday",
+        "ATS"
+      ]
     }
   },
   "metadata": {
-    "employment_region": "Southeast Asia",
-    "data_classification": "Confidential"
+    "employmentRegion": "Southeast Asia",
+    "dataClassification": "Confidential"
   }
 }

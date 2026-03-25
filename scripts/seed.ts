@@ -59,12 +59,17 @@ async function seed() {
   >;
   stripJsonCommentsKey(employeeRaw);
 
-  const employee_id = String(employeeRaw.employee_id);
-  if (!employee_id) {
-    throw new Error("Employee JSON must include employee_id");
+  const employeeId = String(employeeRaw.employeeId ?? employeeRaw.employee_id ?? "");
+  if (!employeeId) {
+    throw new Error("Employee JSON must include employeeId");
   }
 
-  const record = { ...employeeRaw, tenant_id: SEED_TENANT_ID };
+  const record = {
+    ...employeeRaw,
+    tenantId: SEED_TENANT_ID,
+  };
+  delete record.tenant_id;
+  delete record.employee_id;
 
   if (!mongoose.Types.ObjectId.isValid(SEED_TENANT_ID)) {
     throw new Error("SEED_TENANT_ID must be a valid ObjectId hex string");
@@ -129,18 +134,18 @@ async function seed() {
     console.log(`  - formKey=${row.formKey} templateId=${row.templateId}`);
   }
 
-  const removedEmp = await EmployeeRecord.deleteMany({ tenant_id, employee_id });
+  const removedEmp = await EmployeeRecord.deleteMany({ tenant_id, employee_id: employeeId });
   console.log(
-    `Employees: removed ${removedEmp.deletedCount} row(s) for tenant_id=${SEED_TENANT_ID} employee_id=${employee_id}.`,
+    `Employees: removed ${removedEmp.deletedCount} row(s) for tenant_id=${SEED_TENANT_ID} employee_id=${employeeId}.`,
   );
 
   const empDoc = await EmployeeRecord.create({
     tenant_id,
-    employee_id,
+    employee_id: employeeId,
     record,
   });
 
-  console.log(`Seeded employees: ${employee_id}, _id=${String(empDoc._id)}`);
+  console.log(`Seeded employees: ${employeeId}, _id=${String(empDoc._id)}`);
   console.log(`  Employee JSON: ${employeePath}`);
   await mongoose.disconnect();
 }
