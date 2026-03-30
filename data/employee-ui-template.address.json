@@ -38,6 +38,23 @@
           "stateProvince": "State",
           "postalCode": "PIN Code",
           "country": "Country"
+        },
+        "translations": {
+          "vi-VN": {
+            "label": "Chi tiết địa chỉ",
+            "helperText": "Nhập địa chỉ hiện tại và địa chỉ thường trú.",
+            "addressLabels": {
+              "currentAddress": "Địa chỉ hiện tại",
+              "permanentAddress": "Địa chỉ thường trú",
+              "sameAsCurrentAddress": "Giống địa chỉ hiện tại",
+              "line1": "Địa chỉ dòng 1",
+              "line2": "Địa chỉ dòng 2",
+              "city": "Thành phố",
+              "stateProvince": "Tỉnh/Thành phố",
+              "postalCode": "Mã bưu chính",
+              "country": "Quốc gia"
+            }
+          }
         }
       }
     }

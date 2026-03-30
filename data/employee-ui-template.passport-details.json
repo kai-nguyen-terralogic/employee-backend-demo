@@ -1,0 +1,125 @@
+{
+  "$comment": "Passport details form aligned with the employee passport section; includes attachment, passport number, issuing country, issue date, validity date, and screenshot seed values.",
+  "templateId": "passport-details-default",
+  "moduleKey": "employee-management",
+  "formKey": "passport-details",
+  "name": "Passport Details",
+  "version": 1,
+  "status": "ACTIVE",
+  "sourceSchemaVersion": "employee_schema_v2_4",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "layoutConstraints": { "maxFieldsPerRow": 2 },
+  "seedData": {
+    "passportAttachment": [
+      {
+        "name": "passport-data-page-large.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "passportNumber": "PP3213829144",
+    "passportIssuedByCountry": "US",
+    "passportIssuedOn": "2025-09-10",
+    "passportValidTill": "2027-01-28"
+  },
+  "sections": [
+    {
+      "key": "passport",
+      "title": "Passport Details",
+      "rows": [
+        { "key": "rowPassportNumber", "fields": ["passportNumber"] },
+        { "key": "rowIssuedByCountry", "fields": ["passportIssuedByCountry"] },
+        { "key": "rowDates", "fields": ["passportIssuedOn", "passportValidTill"] },
+        { "key": "rowAttachment", "fields": ["passportAttachment"] }
+      ]
+    }
+  ],
+  "fields": {
+    "passportNumber": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "passportNumber",
+      "ui": {
+        "variant": "input",
+        "label": "Passport Number",
+        "placeholder": "e.g. PP3213829144",
+        "required": true,
+        "translations": {
+          "vi-VN": {
+            "label": "Số hộ chiếu",
+            "placeholder": "Ví dụ: PP3213829144"
+          }
+        }
+      }
+    },
+    "passportIssuedByCountry": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "passportIssuedByCountry",
+      "ui": {
+        "variant": "location-select",
+        "label": "Issued By Country",
+        "placeholder": "Select country",
+        "dataSourceKey": "location",
+        "translations": {
+          "vi-VN": {
+            "label": "Quốc gia cấp",
+            "placeholder": "Chọn quốc gia"
+          }
+        }
+      }
+    },
+    "passportIssuedOn": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "passportIssuedOn",
+      "ui": {
+        "variant": "date-picker",
+        "label": "Issued On",
+        "placeholder": "Select issue date",
+        "dateFormat": "DMY",
+        "translations": {
+          "vi-VN": {
+            "label": "Ngày cấp",
+            "placeholder": "Chọn ngày cấp"
+          }
+        }
+      }
+    },
+    "passportValidTill": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "passportValidTill",
+      "ui": {
+        "variant": "date-picker",
+        "label": "Valid Till",
+        "placeholder": "Select expiry date",
+        "dateFormat": "DMY",
+        "translations": {
+          "vi-VN": {
+            "label": "Có hiệu lực đến",
+            "placeholder": "Chọn ngày hết hạn"
+          }
+        }
+      }
+    },
+    "passportAttachment": {
+      "kind": "system",
+      "visible": true,
+      "formBinding": "passportAttachment",
+      "ui": {
+        "variant": "file-input",
+        "label": "Documents",
+        "placeholder": "Drag & drop your file(s) here or Browse to upload a file",
+        "supportedFormats": ["PDF", "JPG", "PNG", "JPEG"],
+        "multiple": false,
+        "showSelectedFiles": true,
+        "translations": {
+          "vi-VN": {
+            "label": "Tệp đính kèm",
+            "placeholder": "Kéo và thả tệp vào đây hoặc nhấn Duyệt để tải tệp lên"
+          }
+        }
+      }
+    }
+  }
+}

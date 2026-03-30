@@ -30,7 +30,13 @@
       "ui": {
         "variant": "phone",
         "label": "Personal Number",
-        "placeholder": "Enter personal phone number"
+        "placeholder": "Enter personal phone number",
+        "translations": {
+          "vi-VN": {
+            "label": "Số điện thoại cá nhân",
+            "placeholder": "Nhập số điện thoại cá nhân"
+          }
+        }
       }
     },
     "persPersonalEmail": {
@@ -41,7 +47,13 @@
         "variant": "input",
         "type": "email",
         "label": "Personal Email",
-        "placeholder": "e.g. personal@example.com"
+        "placeholder": "e.g. personal@example.com",
+        "translations": {
+          "vi-VN": {
+            "label": "Email cá nhân",
+            "placeholder": "Ví dụ: ca_nhan@example.com"
+          }
+        }
       }
     },
     "persMaritalStatus": {
@@ -56,7 +68,22 @@
           { "id": "opt-s", "label": "Single", "value": "Single" },
           { "id": "opt-m", "label": "Married", "value": "Married" },
           { "id": "opt-r", "label": "Rather not mention", "value": "Rather not mention" }
-        ]
+        ],
+        "translations": {
+          "vi-VN": {
+            "label": "Tình trạng hôn nhân",
+            "placeholder": "Chọn tình trạng hôn nhân",
+            "options": [
+              { "id": "opt-s", "label": "Độc thân", "value": "Single" },
+              { "id": "opt-m", "label": "Đã kết hôn", "value": "Married" },
+              {
+                "id": "opt-r",
+                "label": "Không muốn tiết lộ",
+                "value": "Rather not mention"
+              }
+            ]
+          }
+        }
       }
     },
     "persNationality": {
@@ -71,7 +98,18 @@
           { "id": "vn", "label": "Vietnam (VN)", "value": "VN" },
           { "id": "us", "label": "United States (US)", "value": "US" },
           { "id": "sg", "label": "Singapore (SG)", "value": "SG" }
-        ]
+        ],
+        "translations": {
+          "vi-VN": {
+            "label": "Quốc tịch",
+            "placeholder": "Chọn quốc tịch",
+            "options": [
+              { "id": "vn", "label": "Việt Nam (VN)", "value": "VN" },
+              { "id": "us", "label": "Hoa Kỳ (US)", "value": "US" },
+              { "id": "sg", "label": "Singapore (SG)", "value": "SG" }
+            ]
+          }
+        }
       }
     },
     "persNationalId": {
@@ -81,7 +119,13 @@
       "ui": {
         "variant": "input",
         "label": "National ID Number",
-        "placeholder": "National ID"
+        "placeholder": "National ID",
+        "translations": {
+          "vi-VN": {
+            "label": "Số định danh quốc gia",
+            "placeholder": "CCCD/CMND"
+          }
+        }
       }
     },
     "persIssuedDate": {
@@ -92,7 +136,13 @@
         "variant": "date-picker",
         "label": "Issue Date",
         "placeholder": "Select issue date",
-        "dateFormat": "DMY"
+        "dateFormat": "DMY",
+        "translations": {
+          "vi-VN": {
+            "label": "Ngày cấp",
+            "placeholder": "Chọn ngày cấp"
+          }
+        }
       }
     },
     "persExpiryDate": {
@@ -103,7 +153,13 @@
         "variant": "date-picker",
         "label": "Expiry Date",
         "placeholder": "Select expiry date",
-        "dateFormat": "DMY"
+        "dateFormat": "DMY",
+        "translations": {
+          "vi-VN": {
+            "label": "Ngày hết hạn",
+            "placeholder": "Chọn ngày hết hạn"
+          }
+        }
       }
     },
     "persEthnicity": {
@@ -113,7 +169,13 @@
       "ui": {
         "variant": "input",
         "label": "Ethnicity",
-        "placeholder": "Ethnicity"
+        "placeholder": "Ethnicity",
+        "translations": {
+          "vi-VN": {
+            "label": "Dân tộc",
+            "placeholder": "Dân tộc"
+          }
+        }
       }
     },
     "persIssueBy": {
@@ -123,7 +185,13 @@
       "ui": {
         "variant": "input",
         "label": "Issue By",
-        "placeholder": "Issued by"
+        "placeholder": "Issued by",
+        "translations": {
+          "vi-VN": {
+            "label": "Nơi cấp",
+            "placeholder": "Nơi cấp"
+          }
+        }
       }
     },
     "persSocialInsurance": {
@@ -133,7 +201,13 @@
       "ui": {
         "variant": "input",
         "label": "Social Insurance",
-        "placeholder": "Social insurance number"
+        "placeholder": "Social insurance number",
+        "translations": {
+          "vi-VN": {
+            "label": "Số bảo hiểm xã hội",
+            "placeholder": "Số bảo hiểm xã hội"
+          }
+        }
       }
     }
   }

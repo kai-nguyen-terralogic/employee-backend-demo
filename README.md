@@ -57,7 +57,7 @@ All form-template routes require header **`X-Tenant-Id`**: a valid MongoDB **Obj
 | Method | Path | Description |
 |--------|------|-------------|
 | GET | `/api/form-templates/employee-management/active/all` | **All** ACTIVE templates for the tenant. Response `{ items: [...] }` — each element matches the single-template shape below. One row per `formKey` (newest `updatedAt` if duplicates). |
-| GET | `/api/form-templates/employee-management/active?formKey=...` | Latest **ACTIVE** template for that `formKey` (`template` + `compiled` usually `null`). Seed includes **`employee-information`** and **`personal-information`**. |
+| GET | `/api/form-templates/employee-management/active?formKey=...` | Latest **ACTIVE** template for that `formKey` (`template` + `compiled` usually `null`). Seed includes **`employee-information`**, **`personal-information`**, and **`passport-details`**. |
 | PUT | `/api/form-templates/employee-management/:templateId` | Upsert draft; body `{ version, template }`. New doc: `version` must be **0**. Mismatch → **409** |
 | POST | `/api/form-templates/employee-management/:templateId/publish` | Body `{ version }`; **DRAFT** → **ACTIVE**, other **ACTIVE** rows for same `(tenant_id, formKey)` → **ARCHIVED** |
 | GET | `/api/employees` | Demo: list `employee_id` values for the tenant |
@@ -76,6 +76,9 @@ curl -s -H "X-Tenant-Id: $TENANT" \
 
 curl -s -H "X-Tenant-Id: $TENANT" \
   "$BASE/api/form-templates/employee-management/active?formKey=personal-information"
+
+curl -s -H "X-Tenant-Id: $TENANT" \
+  "$BASE/api/form-templates/employee-management/active?formKey=passport-details"
 
 curl -s -H "X-Tenant-Id: $TENANT" \
   "$BASE/api/form-templates/employee-management/active/all"
@@ -98,7 +101,7 @@ curl -s -X PUT -H "Content-Type: application/json" -H "X-Tenant-Id: $TENANT" \
 
 ## Data
 
-- **Templates** — Seed loads two ACTIVE definitions (same tenant): [data/employee-ui-template.example.json](data/employee-ui-template.example.json) (`formKey`: **`employee-information`**) and [data/employee-ui-template.personal-information.json](data/employee-ui-template.personal-information.json) (`formKey`: **`personal-information`**). Response shape per [employee-template-api-contracts.md](../form-builder-document/employee-template-api-contracts.md); seed sets **`compiled`: `null`**.
+- **Templates** — Seed loads three ACTIVE definitions (same tenant): [data/employee-ui-template.example.json](data/employee-ui-template.example.json) (`formKey`: **`employee-information`**), [data/employee-ui-template.personal-information.json](data/employee-ui-template.personal-information.json) (`formKey`: **`personal-information`**), and [data/employee-ui-template.passport-details.json](data/employee-ui-template.passport-details.json) (`formKey`: **`passport-details`**). Response shape per [employee-template-api-contracts.md](../form-builder-document/employee-template-api-contracts.md); seed sets **`compiled`: `null`**.
 - **Employee** — [data/mockEmployeeV24Minh.json](data/mockEmployeeV24Minh.json) → MongoDB `employees` (one document per `tenant_id` + `employee_id`). Full record is returned only from **`GET /api/employees/:employeeId`**.
 
 ## Notes
@@ -109,7 +112,7 @@ curl -s -X PUT -H "Content-Type: application/json" -H "X-Tenant-Id: $TENANT" \
 ## Seed runs but Atlas “does not change”
 
 - **`MONGODB_URI` in `.env` must be the same cluster** you open in Atlas Data Explorer. If URI points to `localhost`, seed updates your **local** Mongo only — Atlas will look unchanged.
-- After seed, expect **one** row in `form_templates` and **one** in `employees` (for the default tenant + `EMP-1042`). Check **`updatedAt`** / **`_id`** after re-seeding.
+- After seed, expect **three** rows in `form_templates` and **one** in `employees` (for the default tenant + `EMP-1042`). Check **`updatedAt`** / **`_id`** after re-seeding.
 - Run `npm run seed` and read the printed **`Target:`** (redacted URI) and **`Connected DB name:`** to confirm where writes go.
 
 ## MongoDB Atlas troubleshooting

@@ -17,6 +17,7 @@ const SEED_TENANT_ID =
 const TEMPLATE_FILES = [
   "employee-ui-template.example.json",
   "employee-ui-template.personal-information.json",
+  "employee-ui-template.passport-details.json",
   "employee-ui-template.address.json",
 ] as const;
 

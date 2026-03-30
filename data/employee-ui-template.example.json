@@ -33,7 +33,13 @@
         "variant": "input",
         "label": "First Name",
         "placeholder": "e.g. John",
-        "required": true
+        "required": true,
+        "translations": {
+          "vi-VN": {
+            "label": "Tên",
+            "placeholder": "Ví dụ: John"
+          }
+        }
       }
     },
     "sysMiddleName": {
@@ -43,7 +49,13 @@
       "ui": {
         "variant": "input",
         "label": "Middle Name",
-        "placeholder": "e.g. John"
+        "placeholder": "e.g. John",
+        "translations": {
+          "vi-VN": {
+            "label": "Tên đệm",
+            "placeholder": "Ví dụ: John"
+          }
+        }
       }
     },
     "sysLastName": {
@@ -54,7 +66,13 @@
         "variant": "input",
         "label": "Last Name",
         "placeholder": "e.g. Doe",
-        "required": true
+        "required": true,
+        "translations": {
+          "vi-VN": {
+            "label": "Họ",
+            "placeholder": "Ví dụ: Doe"
+          }
+        }
       }
     },
     "sysEmployeeId": {
@@ -66,7 +84,13 @@
         "variant": "input",
         "label": "Employee ID",
         "placeholder": "e.g. 123456",
-        "required": true
+        "required": true,
+        "translations": {
+          "vi-VN": {
+            "label": "Mã nhân viên",
+            "placeholder": "Ví dụ: 123456"
+          }
+        }
       }
     },
     "sysDob": {
@@ -77,7 +101,13 @@
         "variant": "date-picker",
         "label": "Date of birth",
         "placeholder": "Select date",
-        "dateFormat": "DMY"
+        "dateFormat": "DMY",
+        "translations": {
+          "vi-VN": {
+            "label": "Ngày sinh",
+            "placeholder": "Chọn ngày"
+          }
+        }
       }
     },
     "sysGender": {
@@ -93,7 +123,17 @@
           { "id": "opt-m", "label": "Male", "value": "MALE" },
           { "id": "opt-f", "label": "Female", "value": "FEMALE" },
           { "id": "opt-o", "label": "Other", "value": "OTHER" }
-        ]
+        ],
+        "translations": {
+          "vi-VN": {
+            "label": "Giới tính",
+            "options": [
+              { "id": "opt-m", "label": "Nam", "value": "MALE" },
+              { "id": "opt-f", "label": "Nữ", "value": "FEMALE" },
+              { "id": "opt-o", "label": "Khác", "value": "OTHER" }
+            ]
+          }
+        }
       }
     },
     "sysWorkEmail": {
@@ -106,7 +146,13 @@
         "type": "email",
         "label": "Work Email",
         "placeholder": "e.g. employee@company.com",
-        "required": true
+        "required": true,
+        "translations": {
+          "vi-VN": {
+            "label": "Email công việc",
+            "placeholder": "Ví dụ: nhanvien@congty.com"
+          }
+        }
       }
     },
     "sysWorkNumber": {
@@ -116,7 +162,13 @@
       "ui": {
         "variant": "phone",
         "label": "Work Number",
-        "placeholder": "Enter work phone number"
+        "placeholder": "Enter work phone number",
+        "translations": {
+          "vi-VN": {
+            "label": "Số điện thoại công việc",
+            "placeholder": "Nhập số điện thoại công việc"
+          }
+        }
       }
     },
     "sysUan": {
@@ -126,7 +178,13 @@
       "ui": {
         "variant": "input",
         "label": "UAN / National ID / SSN",
-        "placeholder": "UAN (India), National ID (VN), or SSN (USA)"
+        "placeholder": "UAN (India), National ID (VN), or SSN (USA)",
+        "translations": {
+          "vi-VN": {
+            "label": "Mã UAN / CCCD / SSN",
+            "placeholder": "UAN (Ấn Độ), CCCD (VN) hoặc SSN (Mỹ)"
+          }
+        }
       }
     },
     "cfShirtSize": {
@@ -144,7 +202,13 @@
           { "id": "s", "label": "S", "value": "S" },
           { "id": "m", "label": "M", "value": "M" },
           { "id": "l", "label": "L", "value": "L" }
-        ]
+        ],
+        "translations": {
+          "vi-VN": {
+            "label": "Cỡ áo thun",
+            "placeholder": "Chọn cỡ"
+          }
+        }
       }
     }
   }
