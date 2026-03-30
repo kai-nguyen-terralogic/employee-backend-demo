@@ -27,8 +27,8 @@
       "title": "Passport Details",
       "rows": [
         { "key": "rowPassportNumber", "fields": ["passportNumber"] },
-        { "key": "rowIssuedByCountry", "fields": ["passportIssuedByCountry"] },
-        { "key": "rowDates", "fields": ["passportIssuedOn", "passportValidTill"] },
+        { "key": "rowIssuedByCountry", "fields": ["issueCountry"] },
+        { "key": "rowDates", "fields": ["issuedDate", "expiryDate"] },
         { "key": "rowAttachment", "fields": ["passportAttachment"] }
       ]
     }
@@ -51,10 +51,10 @@
         }
       }
     },
-    "passportIssuedByCountry": {
+    "issueCountry": {
       "kind": "system",
       "visible": true,
-      "formBinding": "passportIssuedByCountry",
+      "formBinding": "issueCountry",
       "ui": {
         "variant": "location-select",
         "label": "Issued By Country",
@@ -68,15 +68,14 @@
         }
       }
     },
-    "passportIssuedOn": {
+    "issuedDate": {
       "kind": "system",
       "visible": true,
-      "formBinding": "passportIssuedOn",
+      "formBinding": "issuedDate",
       "ui": {
         "variant": "date-picker",
         "label": "Issued On",
         "placeholder": "Select issue date",
-        "dateFormat": "DMY",
         "translations": {
           "vi-VN": {
             "label": "Ngày cấp",
@@ -85,15 +84,14 @@
         }
       }
     },
-    "passportValidTill": {
+    "expiryDate": {
       "kind": "system",
       "visible": true,
-      "formBinding": "passportValidTill",
+      "formBinding": "expiryDate",
       "ui": {
         "variant": "date-picker",
         "label": "Valid Till",
         "placeholder": "Select expiry date",
-        "dateFormat": "DMY",
         "translations": {
           "vi-VN": {
             "label": "Có hiệu lực đến",

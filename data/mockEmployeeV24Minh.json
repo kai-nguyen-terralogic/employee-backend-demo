@@ -144,7 +144,7 @@
       "idType": "CCCD",
       "countryCode": "VN",
       "idNumberMasked": "1234567890",
-      "issueCountry": "Vietnam",
+      "issueCountry": "VN",
       "issueDate": "2021-01-10",
       "expiryDate": "2036-01-10",
       "verified": true,
@@ -152,6 +152,20 @@
       "verifiedAt": "2023-06-20",
       "label": "passport-data-page-large.jpg",
       "uploadedAt": "2023-03-20T10:30:00Z",
+      "url": "https://storage.googleapis.com/hrms-staging-41058.appspot.com/_iac3p/employees/ceo%40mailinator.com/images/3e2d735a-9843-4b97-837a-f9e38219ef20.jpg?GoogleAccessId=firebase-adminsdk-ckews%40hrms-staging-41058.iam.gserviceaccount.com&Expires=1774951927&Signature=gx5C%2BEhYRZhPtq8aF7igzDm%2BD3ERw07faxBzV58m%2BxWWlSomb1hBZ09KRgzflFyKr3nJv8QegJhP6EMHPbBPBdr7C3xjiYR8ORntFuXnh1zfAeOkhiAqK6g0vY8rRJiMSd%2BxLRUz%2BvJu8Hie%2BHNfKa4H3xMlmoYzrLpXUdILQxw7ysRRE%2FJZw4x5PmPLhXChBzF2jKwlBVuYeFHiXPAh2D8899pnfIdH1qw8xFh3CG8doZrMRvr45OwlxUQs5yITd1RFe84ydtvgA%2F2j2pIhdOBDcec0XglyamA7MT90zwRFlaZ72kv8WqgKcJG9DDngXZL76ua6RL8O1Rmu%2B5F2Vw%3D%3D"
+    },
+    {
+      "idType": "PASSPORT",
+      "countryCode": "US",
+      "idNumberMasked": "X1234567",
+      "issueCountry": "US",
+      "issueDate": "2019-09-15",
+      "expiryDate": "2029-09-14",
+      "verified": false,
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "label": "passport-usa.jpg",
+      "uploadedAt": "2019-09-15T08:00:00Z",
       "url": "https://storage.googleapis.com/hrms-staging-41058.appspot.com/_iac3p/employees/ceo%40mailinator.com/images/3e2d735a-9843-4b97-837a-f9e38219ef20.jpg?GoogleAccessId=firebase-adminsdk-ckews%40hrms-staging-41058.iam.gserviceaccount.com&Expires=1774951927&Signature=gx5C%2BEhYRZhPtq8aF7igzDm%2BD3ERw07faxBzV58m%2BxWWlSomb1hBZ09KRgzflFyKr3nJv8QegJhP6EMHPbBPBdr7C3xjiYR8ORntFuXnh1zfAeOkhiAqK6g0vY8rRJiMSd%2BxLRUz%2BvJu8Hie%2BHNfKa4H3xMlmoYzrLpXUdILQxw7ysRRE%2FJZw4x5PmPLhXChBzF2jKwlBVuYeFHiXPAh2D8899pnfIdH1qw8xFh3CG8doZrMRvr45OwlxUQs5yITd1RFe84ydtvgA%2F2j2pIhdOBDcec0XglyamA7MT90zwRFlaZ72kv8WqgKcJG9DDngXZL76ua6RL8O1Rmu%2B5F2Vw%3D%3D"
     }
   ],

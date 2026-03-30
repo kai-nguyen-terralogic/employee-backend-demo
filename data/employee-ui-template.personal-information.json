@@ -136,7 +136,6 @@
         "variant": "date-picker",
         "label": "Issue Date",
         "placeholder": "Select issue date",
-        "dateFormat": "DMY",
         "translations": {
           "vi-VN": {
             "label": "Ngày cấp",
@@ -153,7 +152,6 @@
         "variant": "date-picker",
         "label": "Expiry Date",
         "placeholder": "Select expiry date",
-        "dateFormat": "DMY",
         "translations": {
           "vi-VN": {
             "label": "Ngày hết hạn",

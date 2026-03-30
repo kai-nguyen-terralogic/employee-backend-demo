@@ -101,7 +101,6 @@
         "variant": "date-picker",
         "label": "Date of birth",
         "placeholder": "Select date",
-        "dateFormat": "DMY",
         "translations": {
           "vi-VN": {
             "label": "Ngày sinh",
