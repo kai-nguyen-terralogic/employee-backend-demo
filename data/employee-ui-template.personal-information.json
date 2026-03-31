@@ -1,5 +1,5 @@
 {
-  "$comment": "Personal form aligned with fe-sub-app v2-form-config personalInformationDocument; formKey personal-information.",
+  "$comment": "Personal form aligned with fe-sub-app; formKey personal-information. Document dates use personalIssueDate/personalExpiryDate (personalInfo.issueDate/expiryDate), not issuedDate/expiryDate (governmentIds).",
   "templateId": "personal-information-default",
   "moduleKey": "employee-management",
   "formKey": "personal-information",
@@ -7,7 +7,7 @@
   "version": 1,
   "status": "ACTIVE",
   "sourceSchemaVersion": "employee_schema_v2_4",
-  "updatedAt": "2026-03-24T12:30:00.000Z",
+  "updatedAt": "2026-03-31T12:00:00.000Z",
   "layoutConstraints": { "maxFieldsPerRow": 2 },
   "sections": [
     {
@@ -131,7 +131,7 @@
     "persIssuedDate": {
       "kind": "system",
       "visible": true,
-      "formBinding": "issuedDate",
+      "formBinding": "personalIssueDate",
       "ui": {
         "variant": "date-picker",
         "label": "Issue Date",
@@ -147,7 +147,7 @@
     "persExpiryDate": {
       "kind": "system",
       "visible": true,
-      "formBinding": "expiryDate",
+      "formBinding": "personalExpiryDate",
       "ui": {
         "variant": "date-picker",
         "label": "Expiry Date",

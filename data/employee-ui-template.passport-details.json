@@ -1,5 +1,5 @@
 {
-  "$comment": "Passport details form aligned with the employee passport section; includes attachment, passport number, issuing country, issue date, validity date, and screenshot seed values.",
+  "$comment": "Passport details form; formBinding issuedDate/expiryDate map to governmentIds[i] (see fe-sub-app PASSPORT_DOCUMENT_BINDINGS). Includes attachment, passport number, country, dates, seed values.",
   "templateId": "passport-details-default",
   "moduleKey": "employee-management",
   "formKey": "passport-details",
